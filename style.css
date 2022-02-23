@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+body{
+  font-family: 'Noto Sans KR','나눔고딕','맑은 고딕',돋움,sans-serif;
+  font-size: 14px; text-align: center; margin: 0;
+}
+img{vertical-align: top;}
+
+/**** header ****/
+header{width: 100%; height: 100px; display: flex; }
+header div{width: 40%; height: 96px; }
+header div img{display: block; margin: 0 auto; margin-top: 25px;}
+header nav{width: 60%; display: flex;}
+header nav ul{width: 550px; list-style: none; padding: 0;display: flex;margin: 0 auto; align-items: center;
+flex-direction: wrap; justify-content: space-around;}
+header nav ul .border{width: 70px; border: 1px solid black;}
+header nav ul li a{color: black; text-decoration: none; display: block;padding: 2px;}
+header nav ul .border a:hover{background-color: orange; color: white;}
+header nav ul li a:hover{color: orange;}
+header nav ul li img{ vertical-align: baseline;}
+
+/**** main ****/
+/** main banner **/
+main .banner{width: 100%; height: 600px; background: url(images/mainbanner.png) no-repeat 50%; color: white; position: relative;}
+main .banner p{ font-size: 16px; margin: 0;}
+main .banner h1{ font-size: 50px; margin: 0; padding: 10px; text-shadow:  2px 3px 0px #181818;}
+main .banner #view{margin-top: 50px;}
+main .banner #view a{display:inline-block block;padding: 7px; color: white; text-decoration: none; border: 1px solid white;}
+main .banner #view a:hover{ background-color: rgba(255, 255, 255, 0.3);}
+main .banner .txt{position: absolute; top:50%; left:50%;
+transform: translateX(-50%) translateY(-50%);}
+
+/** main menu **/
+main .menu{width: 100%; height: 722px; margin: 0 auto; position: relative; color: white;}
+main .menu ul{list-style: none; margin: 0; padding: 0; width: 1144px; height: 560px; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between; position: absolute; top:50%; left:50%;transform: translateX(-50%) translateY(-50%);} 
+main .menu ul li{width: 559px; height: 267px;}
+main .menu ul li h3{font-size: 27px; margin: 0; padding-top: 55px; font-weight: 500;}
+main .menu ul li p{font-size: 16px; margin: 15px;}
+main .menu ul li .see a{display: inline-block; color: white; text-decoration: none; border: 1px solid white; padding: 10px 25px;margin: 10px; font-weight: 300;}
+main .menu ul li .see a:hover{ background-color: rgba(255, 255, 255, 0.3);}
+main .menu ul li:nth-child(1){background: url(images/menu1.png) no-repeat 50%;}
+main .menu ul li:nth-child(2){background: url(images/menu2.png) no-repeat 50%;}
+main .menu ul li:nth-child(3){background: url(images/menu3.png) no-repeat 50%;}
+main .menu ul li:nth-child(4){background: url(images/menu4.png) no-repeat 50%;}
+
+/** main business**/
+main .business{background-color: #eee;border-top: 1px solid rgb(230, 230, 230); width: 100%; height: 646px;}
+main .business h2{margin: 0; margin-top: 55px; margin-bottom: 10px; font-size: 38px; font-weight: 500;}
+main .business p{font: 16px; margin: 0;}
+main .business .gopage a{display: inline-block; color: black; text-decoration: none; border: 1px solid black; padding: 10px 26px; margin-top: 15px;}
+main .business .gopage a:hover{ background-color: rgba(0, 0, 0, 0.534); color: white;}
+main .business #box{ width: 100%; margin: 0 auto; margin-top: 32px;}
+main .business #box ul{width: 1185px; list-style: none; padding: 0; margin: 0 auto; display: flex; justify-content: space-between;}
+main .business #box ul li h4{ margin: 16px; font-size: 18px; font-weight: 500;}
+main .business #box ul li p{ margin: 0; font-size: 16px;}
+
+
+/** main banner2 **/
+main .banner2{width: 100%; height: 460px; background:url(images/banner2.png) no-repeat 50%; color: white;}
+main .banner2 h2{ margin: 0; padding-top: 70px; font-size: 48px; font-weight: 400;}
+main .banner2 h4{padding-top: 35px; margin: 0; font-size: 24px; font-weight: 600; padding-bottom: 10px;}
+main .banner2 p{font-size: 16px;}
+main .banner2 .gopage a{display: inline-block; color: white; text-decoration: none; border: 1px solid white; padding: 10px 26px; margin-top: 40px; font-size: 15px; position: relative;}
+main .banner2 .gopage a:hover{background-color: rgba(255, 255, 255, 0.3);}
+main .banner2 #button{width: 100%; margin-top: 50px;}
+main .banner2 #button ul{width: 54px; list-style: none; padding: 0; display: flex; justify-content: space-between; margin: 0 auto;}
+main .banner2 #button ul .button1{width: 20px; height: 5px; background-color: #0f516f;}
+main .banner2 #button ul .button2{width: 20px; height: 5px; background-color: #179bd7;}
+
+
+/** main list **/
+main .list{width: 100%; height: 396px; color: white;}
+main .list ul{width: 1172px; list-style: none; padding: 0; margin: 0 auto; display: flex; padding-top: 47px;}
+main .list ul li{ width: 293px; height: 300px;}
+main .list ul li h4{font-size:  30px; margin: 0; padding-top: 60px; font-weight: 500;}
+main .list ul li p{padding-top: 10px;}
+main .list ul li img{ padding-top: 15px;}
+main .list ul li:nth-child(1){background-color: #fd8200;}
+main .list ul li:nth-child(2){background-color: #6b3802;}
+main .list ul li:nth-child(3){background-color: #fae7cc; color: black;}
+main .list ul li:nth-child(4){background-color: #fd8200;}
+
+
+/**** footer ****/
+footer{border: 1px solid rgb(230, 230, 230); width: 100%;}
+/** footer contact **/
+footer .contact h2{font-size: 30px; margin: 0; padding-top: 55px; padding-bottom: 55px;}
+footer .contact h3{font-size: 25px; font-weight: 600; margin: 0; padding-top: 60px;}
+footer .contact p{margin: 0;}
+footer .contact p:nth-of-type(1){font-size: 16px; margin: 0; padding-bottom: 25px;}
+footer .contact .sns{width: 154px; list-style: none; margin: 0 auto; padding: 0; display: flex; justify-content: space-between; padding-top: 28px; padding-bottom: 56px;}
+
+/** footer last **/
+footer .last{ background-color: #ededed;}
+footer .last .logo2{width: 156px; margin: 0 auto; display: flex; padding-top: 30px;}
+footer .last .logo2 h4{margin: 0; height: 29px; line-height: 34px; padding-left: 3px;}
+footer .last p{margin: 0; padding-top: 20px; font-size: 12px;}
+footer .last .copy{ padding-top: 10px;}
