@@ -6,8 +6,8 @@
 
    <!-- og -->
    <meta property="og:title" content="글루온페이지만들기">
-   <meta property="og:url" content="https://portfolio-young.netlify.app">
-   <meta property="og:image" content="https://portfolio-young.netlify.app/asset/images/og.png">
+   <meta property="og:url" content="https://glueon-website.netlify.app/">
+   <meta property="og:image" content="https://glueon-website.netlify.app/images/logo.png">
    <meta property="og:description" content="글루온페이지 만들기입니다.">
 
   <title>글루온</title>
@@ -20,9 +20,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../../css/common/normalize.css">
+  <link rel="stylesheet" href="common/normalize.css">
   <!--내가만든 css-->
   <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=c20978ee05374e0abaa21d79f9b18b1b"></script>
 </head>
 <body>
   <header>
@@ -136,7 +138,7 @@
   <footer>
     <div class="contact">
       <h2>Contact</h2>
-      <img src="images/map.png" alt="지도">
+      <div id="map"></div>
       <h3>주식회사 글루온</h3>
       <p>경기도 화성시 동탄순환대로, 에이팩시티206호</p>
       <p><strong>Tel:</strong>031-698-4355</p>
@@ -161,5 +163,29 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+		    mapOption = {
+		        center: new kakao.maps.LatLng(37.20876133041395, 127.09764411265978), // 지도의 중심좌표
+		        level: 3, // 지도의 확대 레벨
+		        mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+		    }; 
+
+		// 지도를 생성한다 
+		var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+		// 지도 확대 레벨 변화 이벤트를 등록한다
+		kakao.maps.event.addListener(map, 'zoom_changed', function () {
+			console.log('지도의 현재 확대레벨은 ' + map.getLevel() +'레벨 입니다.');
+		});
+
+    // 지도에 마커를 생성하고 표시한다
+		var marker = new kakao.maps.Marker({
+		    position: new kakao.maps.LatLng(37.20876133041395, 127.09764411265978), // 마커의 좌표
+		    map: map // 마커를 표시할 지도 객체
+		});
+
+  </script>
 </body>
 </html>
