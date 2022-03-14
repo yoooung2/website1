@@ -95,5 +95,8 @@ footer .contact #map{width:1140px;height:400px; margin: 0 auto;}
 footer .last{ background-color: #ededed;}
 footer .last .logo2{width: 156px; margin: 0 auto; display: flex; padding-top: 30px;}
 footer .last .logo2 h4{margin: 0; height: 29px; line-height: 34px; padding-left: 3px;}
+footer .last h1{font-size: 35px; margin: 50px auto;}
+footer .last h1 a{color: black; text-decoration: none; }
+footer .last h1 a:hover{color: rgba(0, 0, 0, 0.534);}
 footer .last p{margin: 0; padding-top: 20px; font-size: 12px;}
 footer .last .copy{ padding-top: 10px;}
